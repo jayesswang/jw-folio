@@ -146,19 +146,18 @@ img {
 }
 
 .about {
-	padding: 50px 15%;
-	display: flex;	
+	padding: 50px 10%;
 }
 
-.container .about .avatar {
+.avatar {
 	width: 150px;
 	height: 150px;
-	margin: 20px auto 40px auto;
+	margin: 0px ;
 }
 
 
 .left-col {
-	width: 49%;
+	width: 49.9%;
 	height: 330px;
 }
 
@@ -194,4 +193,14 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+
+
+.col-wrapper {
+	display: flex;
+}
+
+.about-heading {
+	margin-bottom: 30px;
 }
