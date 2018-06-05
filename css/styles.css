@@ -12,16 +12,17 @@ nav {
 	justify-content: space-between
 }
 
-.nav-placeholder {
+.navbar-spacing {
 	height: 40px;
 }
 
-.nav-logo {
-	width: 60px;
-	height: 30px;
-	padding: 5px 0px;
-	display: inline-block;
-	padding-left: 20px;
+.logo-wrap {
+	width: 50px;
+	height: 40px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 menu {
@@ -32,7 +33,7 @@ menu {
 
 .menu-button {
 	height: 40px;
-	padding: 0px 10px;
+	padding: 0px 8px;
 	display: inline-flex;
     align-items: center;
 }
@@ -51,7 +52,7 @@ header {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
-	color: #383838;
+	color: #404040;
 	text-align: center;	
 	margin: 0px auto;
 }
@@ -63,7 +64,7 @@ h1 {
 
 p {
 	font-family: 'Alegreya Sans', sans-serif;
-	color: #383838;
+	color: #404040;
 }
 
 img {
@@ -86,7 +87,7 @@ img {
 	display: block;
 }
 
-.projects {
+.project-group {
 	text-align: center;		
 }
 
@@ -98,20 +99,25 @@ img {
     align-items: center;
 	padding: 0px 12%;
 }
+#jw-folio {
+	background-image: url(../images/jw-folio-sketches.jpg);
+	background-size: 50% auto;
+	background-position: 0% 7%;
+}
 
 .row-modal {
 	max-width: 450px;
 	min-width: 250px;
 	height: 260px;
 	background-color: #404040;
-	opacity: 0.87%;	
+	opacity: 0.98;
 	display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .project-tag {
-	margin: 0 auto;
+	margin: 0;
 	font-style: italic;
 	font-weight: 300;
 	font-size: 110%;
@@ -120,69 +126,100 @@ img {
 
 .project-name {
 	color: #ffffff;
-	margin: 0 auto;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 .project-intro {
-	color: #ffffff;	
-	margin: 0 auto;
+	color: #ffffff;
+	margin: 0;
 }
 
 .button {
 	width: 150px;
 	height: 40px;
-	margin: 0px auto;
-	color: #FF0089;
-	border: medium solid #FF0089;
+	color: #FF0090;
+	border: medium solid #FF0090;
 	display: flex;
     justify-content: center;
     align-items: center;
+	margin: 0;
 }
 
 .button-text {
 	font-family: 'Alegreya Sans', sans-serif;
-	color: #FF0089;
+	font-weight: 500;
+	color: #FF0090;
+}
+
+.about .button-text {
+	font-weight: 700;
 }
 
 .about {
 	padding: 50px 10%;
+	margin: 0 auto;
 }
 
 .avatar {
 	width: 150px;
-	height: 150px;
-	margin: 0px ;
+	border: medium solid #a0a0a0;
+	border-radius: 50%;
 }
 
 
-.left-col {
-	width: 49.9%;
-	height: 330px;
+.profile {
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	margin-bottom: 40px;
 }
 
 .right-col {
-	width: 50%;
+	margin: 0;
 }
 
 .bio {
-	font-size: 120%;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #404040;
+	font-size: 115%;
 	letter-spacing: 0.2px;
 	font-weight: 400;
-	color: #404040;
+	-webkit-columns: 2 300px;
+    -moz-columns: 2 300px;
+    columns: 2 300px;
+	-webkit-column-gap: 4em;
+	-moz-column-gap: 4em;
+	column-gap: 4em;
+	-webkit-column-rule: 1px solid #ddd;
+	-moz-column-rule: 1px solid #ddd;
+	column-rule: 1px solid #ddd;
+	padding: 0 auto;
 }
 
 #boxly {
-	background-color: #606060;	
+	background-color: #606060;
+	background-image: url(../images/boxly-logo.jpg);
+	background-size: 50%
+% auto;
+	background-size: 37%
+% auto;
+	background-size: 35% auto;
+	background-position: 50% 50%;
 }
 
-.social-button {
-	width: 40px;
-	margin: 0 15px;
-	display: inline-block;
-}
+
 
 .social-media {
+	max-width: 190px;
+	min-width: 150px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between
 }
 
 
@@ -193,14 +230,161 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 }
 
 
 
-.col-wrapper {
-	display: flex;
+article {
+	max-width: 1240px;
 }
 
 .about-heading {
+	width: 100%;
 	margin-bottom: 30px;
+}
+
+a {
+	text-decoration: none;	
+}
+
+.top-wrap {
+	width: 100px;
+	height: 38px;
+	margin: 0 auto;
+	padding-top: 7px;
+	padding-bottom: 9px;
+	font-family: 'Alegreya Sans', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	background-color: #404040;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+
+
+
+.fas {
+	width: 100%;
+	font-size: 180%;
+	text-align: center;	
+}
+
+.top-button {
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+}
+
+.social-wrap {
+	padding: 0px 8px;
+	display: inline-flex;
+    align-items: center;
+}
+
+.social-text {
+	font-family: 'Alegreya Sans', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 94%;
+}
+
+.footer-text {
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.social-links {
+	width: 50%;
+	height: 16px;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.copyright {
+	width: 50%;
+	margin: 0;
+	padding-right: 20px;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 94%;
+	text-align: right;
+	letter-spacing: 0.3px;
+}
+
+.back-top-wrapper {
+	background-color: #808080;
+	display: block;
+}
+
+.bottom-wrap {
+	display: flex;
+	align-items: flex-end;
+	padding: 15px 0px;
+}
+
+.connect {
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #404040;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4% 2% 5%;
+}
+
+.contact-wrap {
+	width: 350px;
+}
+
+.input-field {
+	width: 100%;
+	margin: 0px 0px 18px;
+	border: thin solid #ccc;
+}
+
+.send-button {
+	width: 150px;
+	height: 40px;
+	color: #FF0090;
+	border: medium solid #FF0090;
+	background-color: #fff;
+	font-weight: 700;
+	padding-top: 5px;
+	margin: 16px auto;
+}
+
+.contact-wrap-2 {
+	display: flex;
+}
+
+.connect-text {
+	height: 126px;
+	max-width: 350px;
+	font-size: 107%;
+	font-weight: 400;
+}
+
+.my-email {
+	text-decoration: underline;
+}
+
+#meme {
+	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
