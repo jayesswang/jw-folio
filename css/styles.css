@@ -25,6 +25,10 @@ nav {
 	align-items: center;
 }
 
+a {
+	text-decoration: none;	
+}
+
 menu {
 	color: #ffffff;
 	padding-right: 15px;
@@ -73,6 +77,12 @@ img {
   display: inline-block;
 }
 
+.header-logo {
+	margin: 0 auto 15px;
+	width: 180px;
+	display: block;
+}
+
 .header-intro {
 	font-weight: 200;
 	font-style: italic;
@@ -81,10 +91,13 @@ img {
 	padding: 0px 7%;
 }
 
-.header-logo {
-	margin: 0 auto 15px;
-	width: 180px;
-	display: block;
+.social-media {
+	max-width: 190px;
+	min-width: 150px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between
 }
 
 .project-group {
@@ -99,11 +112,6 @@ img {
     align-items: center;
 	padding: 0px 12%;
 }
-#jw-folio {
-	background-image: url(../images/jw-folio-sketches.jpg);
-	background-size: 50% auto;
-	background-position: 0% 7%;
-}
 
 .row-modal {
 	max-width: 450px;
@@ -114,6 +122,15 @@ img {
 	display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.row-content {
+	height: 210px;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .project-tag {
@@ -152,8 +169,30 @@ img {
 	color: #FF0090;
 }
 
-.about .button-text {
-	font-weight: 700;
+#boxly {
+	background-color: #606060;
+	background-image: url(../images/boxly-logo.jpg);
+	background-size: 50% auto;
+	background-size: 37% auto;
+	background-size: 35% auto;
+	background-position: 50% 50%;
+}
+
+#meme {
+	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#jw-folio {
+	background-image: url(../images/jw-folio-sketches.jpg);
+	background-size: 50% auto;
+	background-position: 0% 7%;
+}
+
+article {
+	max-width: 1240px;
 }
 
 .about {
@@ -167,7 +206,6 @@ img {
 	border-radius: 50%;
 }
 
-
 .profile {
 	height: 220px;
 	display: flex;
@@ -178,8 +216,13 @@ img {
 	margin-bottom: 40px;
 }
 
-.right-col {
-	margin: 0;
+.about-heading {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.about .button-text {
+	font-weight: 700;
 }
 
 .bio {
@@ -200,142 +243,6 @@ img {
 	padding: 0 auto;
 }
 
-#boxly {
-	background-color: #606060;
-	background-image: url(../images/boxly-logo.jpg);
-	background-size: 50%
-% auto;
-	background-size: 37%
-% auto;
-	background-size: 35% auto;
-	background-position: 50% 50%;
-}
-
-
-
-.social-media {
-	max-width: 190px;
-	min-width: 150px;
-	height: 40px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between
-}
-
-
-
-.row-content {
-	height: 210px;
-	width: 85%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-
-
-article {
-	max-width: 1240px;
-}
-
-.about-heading {
-	width: 100%;
-	margin-bottom: 30px;
-}
-
-a {
-	text-decoration: none;	
-}
-
-.top-wrap {
-	width: 100px;
-	height: 38px;
-	margin: 0 auto;
-	padding-top: 7px;
-	padding-bottom: 9px;
-	font-family: 'Alegreya Sans', sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-weight: 500;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-footer {
-	background-color: #404040;
-	font-family: 'Alegreya Sans', sans-serif;
-	color: #ffffff;
-	font-weight: 500;
-}
-
-
-
-
-.fas {
-	width: 100%;
-	font-size: 180%;
-	text-align: center;	
-}
-
-.top-button {
-	width: 100px;
-	margin: 0 auto;
-	display: block;
-}
-
-.social-wrap {
-	padding: 0px 8px;
-	display: inline-flex;
-    align-items: center;
-}
-
-.social-text {
-	font-family: 'Alegreya Sans', sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-weight: 400;
-	font-size: 94%;
-}
-
-.footer-text {
-	font-family: 'Alegreya Sans', sans-serif;
-	color: #ffffff;
-	font-weight: 500;
-}
-
-.social-links {
-	width: 50%;
-	height: 16px;
-	padding-left: 20px;
-	margin: 0;
-}
-
-.copyright {
-	width: 50%;
-	margin: 0;
-	padding-right: 20px;
-	font-family: 'Alegreya Sans', sans-serif;
-	color: #ffffff;
-	font-weight: 400;
-	font-size: 94%;
-	text-align: right;
-	letter-spacing: 0.3px;
-}
-
-.back-top-wrapper {
-	background-color: #808080;
-	display: block;
-}
-
-.bottom-wrap {
-	display: flex;
-	align-items: flex-end;
-	padding: 15px 0px;
-}
-
 .connect {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #404040;
@@ -348,6 +255,21 @@ footer {
 
 .contact-wrap {
 	width: 350px;
+}
+
+.connect-text {
+	height: 126px;
+	max-width: 350px;
+	font-size: 107%;
+	font-weight: 400;
+}
+
+.my-email {
+	text-decoration: underline;
+}
+
+.contact-wrap-2 {
+	display: flex;
 }
 
 .input-field {
@@ -367,24 +289,86 @@ footer {
 	margin: 16px auto;
 }
 
-.contact-wrap-2 {
+footer {
+	background-color: #404040;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.top-wrap {
+	width: 100px;
+	height: 38px;
+	margin: 0 auto;
+	padding-top: 7px;
+	padding-bottom: 9px;
+	font-family: 'Alegreya Sans', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 500;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.connect-text {
-	height: 126px;
-	max-width: 350px;
-	font-size: 107%;
+.back-top-wrapper {
+	background-color: #808080;
+	display: block;
+}
+
+.top-button {
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+}
+
+.top-text {
+	text-decoration: underline;	
+}
+
+.fas {
+	width: 100%;
+	font-size: 180%;
+	text-align: center;	
+}
+
+.bottom-wrap {
+	display: flex;
+	align-items: flex-end;
+	padding: 15px 0px;
+}
+
+.social-links {
+	width: 50%;
+	height: 16px;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.social-wrap {
+	padding: 0px 8px;
+	display: inline-flex;
+    align-items: center;
+}
+
+.social-text {
+	font-family: 'Alegreya Sans', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
 	font-weight: 400;
+	font-size: 94%;
 }
 
-.my-email {
-	text-decoration: underline;
+.copyright {
+	width: 50%;
+	margin: 0;
+	padding-right: 20px;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 94%;
+	text-align: right;
+	letter-spacing: 0.3px;
 }
 
-#meme {
-	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
