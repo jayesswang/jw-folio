@@ -1,15 +1,25 @@
+/* General reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 body {
 	background-color: #ffffff;
 }
+
+/* Navigation & menu bar */
 
 nav {
 	height: 40px;
 	width: 100%;
 	position: fixed;
 	background-color: #404040;
-	opacity: 0.94;
+	opacity: 0.96;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	z-index: 2;
 }
 
 .navbar-spacing {
@@ -30,14 +40,13 @@ a {
 }
 
 menu {
-	color: #ffffff;
 	padding-right: 15px;
 	margin: 0px;
 }
 
 .menu-button {
 	height: 40px;
-	padding: 0px 8px;
+	padding: 0px 10px;
 	display: inline-flex;
     align-items: center;
 }
@@ -49,6 +58,12 @@ menu {
 	font-weight: 500;
 }
 
+a {
+	text-decoration: none;	
+}
+
+/* Header logo & short summary of my skills */
+
 header {
 	padding: 60px 0px;
 	text-align: center;
@@ -59,11 +74,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: #404040;
 	text-align: center;	
 	margin: 0px auto;
-}
-
-h1 {
-	font-weight: 700;
-	text-transform: uppercase;
 }
 
 p {
@@ -83,6 +93,15 @@ img {
 	display: block;
 }
 
+.my-name {
+	font-family: 'Architects Daughter', 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 230%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: #FF0090;
+}
+
 .header-intro {
 	font-weight: 200;
 	font-style: italic;
@@ -99,6 +118,18 @@ img {
 	display: flex;
 	justify-content: space-between
 }
+
+.social-media {
+	max-width: 190px;
+	min-width: 150px;
+	height: 40px;
+	margin: 22px auto 0px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+/* Top 3 projects & project description */
 
 .project-group {
 	text-align: center;		
@@ -118,7 +149,7 @@ img {
 	min-width: 250px;
 	height: 260px;
 	background-color: #404040;
-	opacity: 0.98;
+	opacity: 0.96;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -155,18 +186,23 @@ img {
 .button {
 	width: 150px;
 	height: 40px;
-	color: #FF0090;
-	border: medium solid #FF0090;
+	color: #FFE600;
+	border: medium solid #FFE600;
 	display: flex;
     justify-content: center;
     align-items: center;
-	margin: 0;
 }
 
 .button-text {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: 500;
-	color: #FF0090;
+}
+
+#meme {
+	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 #boxly {
@@ -178,18 +214,13 @@ img {
 	background-position: 50% 50%;
 }
 
-#meme {
-	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-
 #jw-folio {
 	background-image: url(../images/jw-folio-sketches.jpg);
 	background-size: 50% auto;
 	background-position: 0% 7%;
 }
+
+/* About section with avatar & resume link */
 
 article {
 	max-width: 1240px;
@@ -200,10 +231,9 @@ article {
 	margin: 0 auto;
 }
 
-.avatar {
-	width: 150px;
-	border: medium solid #a0a0a0;
-	border-radius: 50%;
+.about-heading {
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 .profile {
@@ -213,16 +243,23 @@ article {
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
-.about-heading {
-	width: 100%;
-	margin-bottom: 30px;
+.avatar {
+	width: 150px;
+	border: medium solid #a0a0a0;
+	border-radius: 50%;
+	margin-bottom: 20px;
 }
 
 .about .button-text {
 	font-weight: 700;
+}
+
+.button.resume {	
+	color: #FF0090;
+	border: medium solid #FF0090;
 }
 
 .bio {
@@ -243,7 +280,13 @@ article {
 	padding: 0 auto;
 }
 
-.connect {
+.bio-link {
+	text-decoration: underline;
+}
+
+/* Contact section & contact form */
+
+.connect-wrap {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #404040;
 	font-weight: 500;
@@ -253,29 +296,35 @@ article {
 	padding: 4% 2% 5%;
 }
 
-.contact-wrap {
-	width: 350px;
-}
-
-.connect-text {
-	height: 126px;
+.connect-heading {
 	max-width: 350px;
 	font-size: 107%;
 	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.connect-text {
+	max-width: 350px;
+	font-size: 105%;
+	margin-top: 20px;
 }
 
 .my-email {
 	text-decoration: underline;
 }
 
-.contact-wrap-2 {
-	display: flex;
+.form-wrap {
+	width: 350px;
 }
 
 .input-field {
 	width: 100%;
 	margin: 0px 0px 18px;
 	border: thin solid #ccc;
+}
+
+.send-button-wrap {
+	display: flex;
 }
 
 .send-button {
@@ -289,6 +338,8 @@ article {
 	margin: 16px auto;
 }
 
+/* Footer section includes a "back to top" page anchor, social media, and copyright info */
+
 footer {
 	background-color: #404040;
 	font-family: 'Alegreya Sans', sans-serif;
@@ -296,9 +347,14 @@ footer {
 	font-weight: 500;
 }
 
-.top-wrap {
+.back-top-bar {
+	background-color: #808080;
+	display: block;
+}
+
+.back-top-wrap {
 	width: 100px;
-	height: 38px;
+	height: 56px;
 	margin: 0 auto;
 	padding-top: 7px;
 	padding-bottom: 9px;
@@ -312,18 +368,13 @@ footer {
 	align-items: center;
 }
 
-.back-top-wrapper {
-	background-color: #808080;
-	display: block;
-}
-
-.top-button {
+.back-top-link {
 	width: 100px;
 	margin: 0 auto;
 	display: block;
 }
 
-.top-text {
+.back-top-text {
 	text-decoration: underline;	
 }
 
@@ -333,21 +384,23 @@ footer {
 	text-align: center;	
 }
 
-.bottom-wrap {
+/* Footer section with "back-to-top" link, social media, and copyright info */
+
+.footer-wrap {
 	display: flex;
 	align-items: flex-end;
 	padding: 15px 0px;
 }
 
-.social-links {
+.social-wrap {
 	width: 50%;
 	height: 16px;
 	padding-left: 20px;
 	margin: 0;
 }
 
-.social-wrap {
-	padding: 0px 8px;
+.social-link {
+	padding: 0px 5px;
 	display: inline-flex;
     align-items: center;
 }
@@ -357,7 +410,8 @@ footer {
 	text-transform: uppercase;
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 94%;
+	font-size: 91%;
+	letter-spacing: 0.1px;
 }
 
 .copyright {
@@ -366,9 +420,10 @@ footer {
 	padding-right: 20px;
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #ffffff;
-	font-weight: 400;
-	font-size: 94%;
+	font-weight: 300;
+	font-size: 92%;
 	text-align: right;
 	letter-spacing: 0.3px;
 }
+
 
