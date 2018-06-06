@@ -1,15 +1,25 @@
+/* General reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 body {
 	background-color: #ffffff;
 }
+
+/* Navigation & menu bar */
 
 nav {
 	height: 40px;
 	width: 100%;
 	position: fixed;
 	background-color: #404040;
-	opacity: 0.94;
+	opacity: 0.96;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	z-index: 2;
 }
 
 .navbar-spacing {
@@ -26,14 +36,13 @@ nav {
 }
 
 menu {
-	color: #ffffff;
 	padding-right: 15px;
 	margin: 0px;
 }
 
 .menu-button {
 	height: 40px;
-	padding: 0px 8px;
+	padding: 0px 10px;
 	display: inline-flex;
     align-items: center;
 }
@@ -44,6 +53,12 @@ menu {
 	color: #ffffff;
 	font-weight: 500;
 }
+
+a {
+	text-decoration: none;	
+}
+
+/* Header logo & short summary of my skills */
 
 header {
 	padding: 60px 0px;
@@ -57,11 +72,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0px auto;
 }
 
-h1 {
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
 p {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #404040;
@@ -71,6 +81,15 @@ img {
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
+}
+
+h1.my-name {
+	font-family: 'Architects Daughter', 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 230%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: #FF0090;
 }
 
 .header-intro {
@@ -87,6 +106,18 @@ img {
 	display: block;
 }
 
+.social-media {
+	max-width: 190px;
+	min-width: 150px;
+	height: 40px;
+	margin: 22px auto 0px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+/* Top 3 projects & project description */
+
 .project-group {
 	text-align: center;		
 }
@@ -99,21 +130,25 @@ img {
     align-items: center;
 	padding: 0px 12%;
 }
-#jw-folio {
-	background-image: url(../images/jw-folio-sketches.jpg);
-	background-size: 50% auto;
-	background-position: 0% 7%;
-}
 
 .row-modal {
 	max-width: 450px;
 	min-width: 250px;
 	height: 260px;
 	background-color: #404040;
-	opacity: 0.98;
+	opacity: 0.96;
 	display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.row-content {
+	height: 210px;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .project-tag {
@@ -138,22 +173,44 @@ img {
 .button {
 	width: 150px;
 	height: 40px;
-	color: #FF0090;
-	border: medium solid #FF0090;
+	color: #FFFFFF;
+	border: medium solid #FFFFFF;
 	display: flex;
     justify-content: center;
     align-items: center;
-	margin: 0;
 }
 
 .button-text {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: 500;
-	color: #FF0090;
 }
 
-.about .button-text {
-	font-weight: 700;
+#meme {
+	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#boxly {
+	background-color: #606060;
+	background-image: url(../images/boxly-logo.jpg);
+	background-size: 50% auto;
+	background-size: 37% auto;
+	background-size: 35% auto;
+	background-position: 50% 50%;
+}
+
+#jw-folio {
+	background-image: url(../images/jw-folio-sketches.jpg);
+	background-size: 50% auto;
+	background-position: 0% 7%;
+}
+
+/* About section with avatar & resume link */
+
+article {
+	max-width: 1240px;
 }
 
 .about {
@@ -161,12 +218,10 @@ img {
 	margin: 0 auto;
 }
 
-.avatar {
-	width: 150px;
-	border: medium solid #a0a0a0;
-	border-radius: 50%;
+.about-heading {
+	width: 100%;
+	margin-bottom: 20px;
 }
-
 
 .profile {
 	height: 220px;
@@ -175,11 +230,23 @@ img {
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
-.right-col {
-	margin: 0;
+.avatar {
+	width: 150px;
+	border: medium solid #a0a0a0;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.about .button-text {
+	font-weight: 700;
+}
+
+.button.resume {	
+	color: #FF0090;
+	border: medium solid #FF0090;
 }
 
 .bio {
@@ -200,141 +267,7 @@ img {
 	padding: 0 auto;
 }
 
-#boxly {
-	background-color: #606060;
-	background-image: url(../images/boxly-logo.jpg);
-	background-size: 50%
-% auto;
-	background-size: 37%
-% auto;
-	background-size: 35% auto;
-	background-position: 50% 50%;
-}
-
-
-
-.social-media {
-	max-width: 190px;
-	min-width: 150px;
-	height: 40px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between
-}
-
-
-
-.row-content {
-	height: 210px;
-	width: 85%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-
-
-article {
-	max-width: 1240px;
-}
-
-.about-heading {
-	width: 100%;
-	margin-bottom: 30px;
-}
-
-a {
-	text-decoration: none;	
-}
-
-.top-wrap {
-	width: 100px;
-	height: 38px;
-	margin: 0 auto;
-	padding-top: 7px;
-	padding-bottom: 9px;
-	font-family: 'Alegreya Sans', sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-weight: 500;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-footer {
-	background-color: #404040;
-	font-family: 'Alegreya Sans', sans-serif;
-	color: #ffffff;
-	font-weight: 500;
-}
-
-
-
-
-.fas {
-	width: 100%;
-	font-size: 180%;
-	text-align: center;	
-}
-
-.top-button {
-	width: 100px;
-	margin: 0 auto;
-	display: block;
-}
-
-.social-wrap {
-	padding: 0px 8px;
-	display: inline-flex;
-    align-items: center;
-}
-
-.social-text {
-	font-family: 'Alegreya Sans', sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-weight: 400;
-	font-size: 94%;
-}
-
-.footer-text {
-	font-family: 'Alegreya Sans', sans-serif;
-	color: #ffffff;
-	font-weight: 500;
-}
-
-.social-links {
-	width: 50%;
-	height: 16px;
-	padding-left: 20px;
-	margin: 0;
-}
-
-.copyright {
-	width: 50%;
-	margin: 0;
-	padding-right: 20px;
-	font-family: 'Alegreya Sans', sans-serif;
-	color: #ffffff;
-	font-weight: 400;
-	font-size: 94%;
-	text-align: right;
-	letter-spacing: 0.3px;
-}
-
-.back-top-wrapper {
-	background-color: #808080;
-	display: block;
-}
-
-.bottom-wrap {
-	display: flex;
-	align-items: flex-end;
-	padding: 15px 0px;
-}
+/* Contact section & contact form */
 
 .connect {
 	font-family: 'Alegreya Sans', sans-serif;
@@ -382,9 +315,87 @@ footer {
 	text-decoration: underline;
 }
 
-#meme {
-	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+/* Footer section includes a "back to top" page anchor, social media, and copyright info */
+
+footer {
+	background-color: #404040;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 500;
 }
+
+.back-top-wrap {
+	width: 100px;
+	height: 56px;
+	margin: 0 auto;
+	padding-top: 7px;
+	padding-bottom: 9px;
+	font-family: 'Alegreya Sans', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.back-top-bar {
+	background-color: #808080;
+	display: block;
+}
+
+.back-top-link {
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+}
+
+.fas {
+	width: 100%;
+	font-size: 180%;
+	text-align: center;	
+}
+
+.footer-wrap {
+	display: flex;
+	align-items: flex-end;
+	padding: 15px 0px;
+}
+
+.social-wrap {
+	width: 50%;
+	height: 16px;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.social-link {
+	padding: 0px 5px;
+	display: inline-flex;
+    align-items: center;
+}
+
+.social-text {
+	font-family: 'Alegreya Sans', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 91%;
+	letter-spacing: 0.1px;
+}
+
+.copyright {
+	width: 50%;
+	margin: 0;
+	padding-right: 20px;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 92%;
+	text-align: right;
+	letter-spacing: 0.4px;
+}
+
+
+
