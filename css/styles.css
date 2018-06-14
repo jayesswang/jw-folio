@@ -16,9 +16,11 @@ body {
 	max-width: 1600px;
 	width: 100%;
 	background-color: #303030;
-	opacity: 0.95;
+	opacity: 0.97;
 	display: flex;
 	justify-content: space-between;
+/*	box-shadow: 0px 3px 3px 0px rgba(98,98,98,0.80);
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(98,98,98,0.80); */
 }
 
 .container {
@@ -51,8 +53,8 @@ nav {
 	align-items: center;
 }
 
-a {
-	text-decoration: none;	
+.logo-link {
+	background-color: none;
 }
 
 menu {
@@ -66,6 +68,14 @@ menu {
     align-items: center;
 }
 
+.menu-button:hover {
+	background-color: #FF0090;
+}
+
+.menu-button:active {
+	background-color: #FF0090;
+}
+
 .menu-text {
 	font-family: 'Alegreya Sans', sans-serif;
 	text-transform: uppercase;
@@ -73,8 +83,8 @@ menu {
 	font-weight: 500;
 }
 
-a {
-	text-decoration: none;	
+.button-link {
+	text-decoration: none;
 }
 
 /* Header logo & short summary of my skills */
@@ -96,6 +106,14 @@ p {
 	color: #404040;
 }
 
+a:link {
+	color: #EE1C91;
+}
+
+a:visited {
+	color: #891155;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -104,18 +122,18 @@ img {
 
 .header-logo {
 	margin: 0 auto 15px;
-	width: 180px;
+	width: 150px;
 	display: block;
 }
 
 .my-name {
-	font-family: 'Architects Daughter', 'Raleway', sans-serif;
-	font-weight: 600;
-	font-size: 220%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 210%;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	color: #FF0090;
-}
+	color: #404040;
+} 
 
 .header-intro {
 	font-weight: 400;
@@ -125,23 +143,6 @@ img {
 	padding: 0px 7%;
 }
 
-.social-media {
-	max-width: 190px;
-	min-width: 150px;
-	margin: 20 auto 0;
-	display: flex;
-	justify-content: space-between
-}
-
-.social-media {
-	max-width: 190px;
-	min-width: 150px;
-	margin: 22px auto 0px;
-	display: flex;
-	justify-content: space-between;
-
-}
-
 /* Top 3 projects & project description */
 
 .project-group {
@@ -149,7 +150,7 @@ img {
 }
 
 .row {
-	height: 520px;
+	height: 600px;
 	background-color: #d0d0d0;
 	display: flex;
     justify-content: center;
@@ -182,7 +183,7 @@ img {
 	font-style: italic;
 	font-weight: 300;
 	font-size: 110%;
-	color: #989898;
+	color: #B8B8B8;
 }
 
 .project-name {
@@ -193,6 +194,7 @@ img {
 
 .project-intro {
 	color: #ffffff;
+	font-weight: 300;
 	margin: 0;
 }
 
@@ -210,11 +212,11 @@ button {
 
 .button-text {
 	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
+	text-decoration: none;
 }
 
 #meme {
-	background-image: url(../images/portfolio-hero-meme-mobile-game-1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -222,17 +224,15 @@ button {
 
 #boxly {
 	background-color: #606060;
-	background-image: url(../images/boxly-logo.jpg);
-	background-size: 50% auto;
-	background-size: 37% auto;
-	background-size: 35% auto;
+	background-image: url(../images/boxly-hero-img.png);
+	background-size: cover;
 	background-position: 50% 50%;
 }
 
 #jw-folio {
-	background-image: url(../images/jw-folio-sketches.jpg);
-	background-size: 65% auto;
-	background-position: -10% 4%;
+	background-image: url(../images/jw-folio-hero-img.png);
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
 /* About section with avatar & resume link */
@@ -270,8 +270,12 @@ article {
 	margin-bottom: 20px;
 }
 
-.about .button-text {
-	font-weight: 700;
+.resume-text {
+	font-weight: 500;
+}
+
+.resume-link {
+	text-decoration: none;
 }
 
 .button-pink {	
@@ -296,10 +300,6 @@ article {
 	column-rule: 1px solid #ddd;
 }
 
-.bio-link {
-	text-decoration: underline;
-}
-
 /* Contact section & contact form */
 
 .connect-block {
@@ -317,7 +317,7 @@ article {
 }
 
 .connect-wrap {
-	max-width: 350px;
+	max-width: 340px;
 	font-size: 107%;
 	font-weight: 400;
 	display: flex;
@@ -326,7 +326,7 @@ article {
 }
 
 .connect-text {
-	font-size: 105%;
+	font-size: 107%;
 	width: 100%;
 	margin: 20px 25px;
 }
@@ -413,7 +413,7 @@ footer {
 
 .social-wrap {
 	width: 50%;
-	padding-right: 20px;
+	padding-right: 9px;
 	margin: 0;
 	display: flex;
 	justify-content: flex-end;
@@ -447,13 +447,13 @@ footer {
 }
 
 .social-button {
-	width: 34px;
-	margin: 0px 8px;
+	width: 35px;
+	margin: 0px 11px;
 }
 
 /* Media queries for mobile devices */
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
 	.connect-block {
 		padding: 10px 20px 40px;
 	}
@@ -487,4 +487,9 @@ footer {
     	letter-spacing: 0.3px;
 		order: 2;
     }
+	.social-button {
+		width: 35px;
+		margin: 0px 11px 5px;
+	}
 }
+
