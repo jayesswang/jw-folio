@@ -67,11 +67,11 @@ q {
 }
 
 a:link {
-	color: #DF1182;
+	color: #E00B7C;
 }
 
 a:visited {
-	color: #7B0848;
+	color: #92094B;
 }
 
 img {
@@ -211,7 +211,7 @@ SECTION - CONTACT ME (LINKS ONLY, NO CONTACT FORM)
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px 20px 60px;
+	padding: 0px 20px 50px;
 }
 
 .connect-wrap {
