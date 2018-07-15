@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PORTFOLIO | JAYESS WANG</title>
+<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+<link href="styles/cs-folio-index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class="container shadow"><a name="navbar"></a>
+  <header>
+		<div class="title">
+			<h2>CASE STUDY</h2>
+			<h1>JW PORTFOLIO</h1>
+		</div>
+  </header>
+  <section class="article-wrap">
+    <article class="case-study">
+      <div class="text-block intro">
+        <h3>INTRODUCTION</h3>
+        <p>If you were asked to complete the following analogy, how would you answer?</p>
+        <blockquote id="analogy">
+          <p>Architect is to engineer,<br>
+            as web designer is to ________________________.</p>
+        </blockquote>
+        <p>If you responded with "web developer" (or anything similar), then you understand that these pairings describe the professional relationship between one who creates an idea and one who converts that idea into a tangible final product. </p>
+      </div>
+      <div class="text-block inspo">
+        <h3>INSPIRATION</h3>
+        <p>Recently, I discovered a <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIC60856GnLEV5GQXMxc9ByJ" target="_blank">series of YouTube videos</a> by Google Chrome Developers titled, “<a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIC60856GnLEV5GQXMxc9ByJ">Designers vs. Developers</a>.” In each episode, the hosts discuss common industry pain points by opening a conversation between the two sides, providing takeaways, solutions to workflows, tools, and discussions on everyday struggles. With these insights into the importance and difficulties in the designer/developer relationship, I felt intrigued to study the development process in converting mockups into a functional website and inspired to level up my ability to empathize and communicate with others. </p>
+				<p>In this project, I challenged myself to (literally!) step into a developer's shoes by hand coding a responsive website of my portfolio from scratch and <a href="https://jayesswang.github.io/">hosting it on GitHub</a>. I’m always open to growing as a designer, so this project gave me the opportunity to try something new, test out ideas, and expand my range of skills. </p>
+      </div>
+<!--
+      <div class="text-block about-project">
+        <h3>ABOUT THIS PROJECT</h3>
+				<p>I’m always open to growing as a designer, so this project gave me the opportunity to try something new, test out ideas, and expand my range of skills. This article will summarize my discoveries from two seperate tasks:</p>
+				<div class="ol-wrapper">
+					<ol>
+						<li>I challenged myself to (literally!) step into a developer's shoes by hand coding a responsive website of my portfolio from scratch and <a href="https://jayesswang.github.io/">hosting it on GitHub</a>. </li>
+						<li>I also explored the power of CSS3 by creating a few different layouts of this project&#8202;&mdash;&#8202;JW Portfolio&#8202;&mdash; with links below under "Select a Design." </li>
+					</ol>
+				</div>
+      </div>
+      <div class="text-block select-design">
+				<h3>SELECT A DESIGN</h3>
+        <ul>
+					<li><a href="#">DESIGN 1</a></li>
+					<li><a href="#">DESIGN 2</a></li>
+					<li><a href="#">DESIGN 3</a></li>
+					<li><a href="#">DESIGN 4</a></li>
+				</ul>
+			</div>
+-->
+      <div class="text-block insights-tech">
+				<h3>TECHNICAL INSIGHTS</h3>
+				<p>Starting with the basics, I studied in-depth how the CSS box model works: that it is essentially a box that wraps around every HTML element, and that it consists of margins, borders, padding, and the actual content. I enjoyed reading about the history of HTML/CSS and felt immense gratitude for the introduction of CSS Grid and Flexbox. I can't imagine the coding acrobatics developers in the past went through just to create the proper website layout!
+				<br>
+				<br>
+				The HTML below showcases how I applied the box model to create a centered and fixed navigation bar: </p>
+				
+<pre>
+<code>&lt;nav&gt;
+  &lt;div class="nav-wrapper"&gt;
+    &lt;a href="#"&gt;&lt;div class="logo"&gt;&lt;/div&gt;&lt;/a&gt;
+    &lt;menu&gt;
+      &lt;a href="#"&gt;&lt;span&gt;HOME&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;&lt;span&gt;PROJECTS&lt;/span&gt;&lt;/a&gt;
+      &lt;a href="#"&gt;&lt;span&gt;ABOUT&lt;/span&gt;&lt;/a&gt;
+    &lt;/menu&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code>
+</pre>
+				<p>The CSS below showcases how I styled the HTML: </p>
+<pre>
+<code>  .nav {
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .nav-wrapper {
+    max-width: 1280px;
+    width: 100%;
+    background-color: #303030;
+    opacity: 0.97;
+    display: flex;
+    justify-content: space-between;
+  }
+</code>
+</pre>
+				
+				<p>Although there there were too many topics that I studied than I can cover in this article, here are some major concepts that I examined which include, but were not limited to, the following:</p>
+					<ol>
+						<li>Semantic HTML</li>
+						<li>The value in using CSS grid and flexbox over frameworks, such as Bootstrap</li>
+						<li>The hierarchy of the DOM tree</li>
+						<li>The order in which a browser parses HTML/CSS and renders content in the browser window</li>
+						<li>When to use CSS vs. JavaScript when building interactive features (simple vs. complex)</li>
+						<li>Improved perceived performance with skeleton screens (designing latency stages)</li>
+						<li>Graceful degradation vs. progressive enhancement</li>
+					</ol>
+
+				<p>As I underwent this learning process, I grew in my appreciation for and ability to empathize with a developer’s unique perspective, priorities, and challenges in responsive web development. For example, just the other day, I read the following in an article:</p>
+				
+				<blockquote id="maeda">
+          <p>In its infancy, [Instagram] was too computationally expensive to allow for both landscape and portrait mode; instead of limiting the interface to one or the other, Instagram’s designers decided to make every photo a square. By being square, you didn’t have to choose anymore. It was a great design decision.</p> 
+					<span>~John Maeda, <a href="https://www.wired.com/2017/03/john-maeda-want-survive-design-better-learn-code/">Wired Magazine</a></span>
+        </blockquote>
+				<p>Upon reading it, I realized that development-related concerns had become easier for me to understand and anticipate, which translates into more productive and expedient collaboration with developers because I would not need them to explain as many things to me. </p>
+			</div>
+			<div class="text-block conclusion">
+				<h3>CONCLUSION</h3>
+				<p>The more I coded, the more comfortable I became with code. Strengthen my ability to find answers quickly and independently. Gone were the days when just <span>looking</span> at an HTML document would intimidate me. <br>
+				<br>
+				Step away from the problem when stuck and frustrated. Use resources at my disposal, such as my community, exercise, eating well, sleeping, create a music playlist (classical music, perfect opportunity to test out a new set of headphones). Building a local and remote community. Helps to get unstuck when you have people around you to bounce off ideas on them. Very helpful whenever I got stuck and frustrated. Stay cool and focused under pressure. It helps to get a different perspective by working on a different project or task which allows the subconciuos mind to tackle the original problem in a creative way in the background. <br>
+				<br>
+				Research shows <a href="http://www.bbc.com/future/story/20160811-the-amazing-benefits-of-being-bilingual">numerous benefits in bilingualism</a>, especially in how it improves a person's ability to adapt to change, feel empathy towards others, and creatively solve problems. having the imagination and vision to see alternate approaches and results. I felt something similar switching between designing and coding, like a different part of my brain was activated and a different kind of creativity emerged.</p>
+			</div>
+			<div class="fav-links-wrap">
+				<h3>FAVORITE LINKS</h3>
+				<p>Here are some of the top links I referenced during this project. I also bookmarked them so I would have quick and easy access to them in the future whenever I am looking for technical knowledge or creative inspiration.</p>
+				<div class="fav-links">
+					<h4>RESOURCES</h4>
+						<ul>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#Grid_and_flexbox">MOZILLA - MDN WEB DOCS</a></li>
+							<li><a href="https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/">SMASHING MAGAZINE</a></li>
+							<li><a href="https://css-tricks.com/your-brain-on-front-end-development/">CSS-TRICKS</a></li>
+							<li><a href="https://stackoverflow.com/tags">STACK OVERFLOW</a></li>
+						</ul>
+				</div>
+				<div class="fav-links">
+					<h4>CREATIVE JUICE</h4>
+					<ul>
+						<li><a href="https://www.behance.net/featured">BEHANCE</a></li>
+						<li><a href="https://abduzeedo.com/">ABDUZEEDO</a></li>
+						<li><a href="https://labs.jensimmons.com">JEN SIMMONS LAB</a></li>
+						<li><a href="http://brutalistwebsites.com/">BRUTALIST</a></li>
+					</ul>
+				</div>
+			</div>
+    </article>
+  </section>
+</section>
+</body>
+</html>

@@ -1,9 +1,9 @@
+@charset "UTF-8";
 /* CSS Document */
 
 /* ************************************************************************************
 SECTION - HEADER
 ************************************************************************************* */
-
 /* ************************************************************************************
 HEADER - LOGO & SHORT SUMMARY OF SKILLS
 ************************************************************************************* */
@@ -37,7 +37,11 @@ header {
 	font-style: italic;
 	font-size: 105%;
 	letter-spacing: 0.2px;
-	padding: 0px 7%;
+	padding: 0px 8px;
+}
+
+.header-intro span {
+	text-decoration: line-through;	
 }
 
 .social-header-wrap {
@@ -145,9 +149,8 @@ PROJECTS - TITLES & PROJECT DESCRIPTIONS
 	background-image: url(../images/boxly-hero-img-v1.png);
 	background-size: cover;
 	background-position: 50% 50%;
-	position: relative;*/
+	position: relative;
 	background-color: #0592BE;
-
 }
 
 #boxly-logo {
@@ -194,10 +197,6 @@ PROJECTS - TITLES & PROJECT DESCRIPTIONS
 
 
 
-
-
-
-
 /* ************************************************************************************
 SECTION - MEDIA QUERIES FOR HOMEPAGE ELEMENTS
 ************************************************************************************* */
@@ -227,7 +226,7 @@ MEDIA QUERIES - MOBILE DEVICES
 		font-style: italic;
 		font-size: 17px;
 		letter-spacing: 0.2px;
-		padding: 0px 7%;
+		padding: 0px 8px;
 	}
 	
 	.project-tag {
