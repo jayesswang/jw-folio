@@ -203,7 +203,7 @@ SECTION - PERSONAS
 
 
 /* ************************************************************************
-SECTION - USER FLOWS, WIREFRAMES, MOCKUPS
+SECTION - USER FLOWS, WIREFRAMES, TESTING, MOCKUPS
 ************************************************************************* */
 .light-solid-wrap {
 	width: 100%;
@@ -258,7 +258,7 @@ SECTION - USER FLOWS, WIREFRAMES, MOCKUPS
 		padding: 5px 10px;
 	}
 }
-
-
-
-
+.testing ol{
+	width: 88%;
+	margin: auto;
+}
